@@ -1,0 +1,122 @@
+/* General Styles */
+.body {
+    background: url('https://media.giphy.com/media/4N1FZFE5AGO3qrUGkw/giphy.gif') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Philosopher', sans-serif;
+}
+.header {
+    background-color: black;
+    margin-top: 0%;
+}
+.head {
+    font-size: 50px;
+    font-weight: 800;
+    color: skyblue;
+}
+.input-search {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.input-search input {
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    width: 50%;
+    font-weight: bolder;
+}
+.input-search button {
+    background-color: rgba(244, 249, 246, 0.634);
+    color: rgb(86, 4, 151);
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+.input-search button:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+.serch {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 8%;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'Philosopher', sans-serif;
+}
+.city-info {
+    margin-top: 40px;
+    padding: 20px;
+}
+.loc {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+}
+.wicon {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+.city-info h1, .city-info h2 {
+    color: rgb(15, 15, 15);
+    text-align: center;
+}
+.box {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+.forecast {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+.forecast-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.forecast-item {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    width: 150px;
+}
+.forecast-item img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .input-search input {
+        width: 80%;
+    }
+    .forecast-container {
+        flex-direction: column;
+    }
+}
